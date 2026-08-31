@@ -2,9 +2,9 @@
 
 **Pontificia Universidad Javeriana · 2026-II · Docente: Pedro Ardila**
 
-> **Estudiante:** [escribe aquí tu nombre completo]
-> **Nombre del proyecto:** [escribe aquí el nombre de tu herramienta]
-> **Fecha de inicio:** [AAAA-MM-DD]
+> **Estudiante:** [Isabella Medina Ospina ]
+> **Nombre del proyecto:** [SASify Colombia]
+> **Fecha de inicio:** [2026-08-21]
 
 ---
 
@@ -22,14 +22,14 @@ Bienvenido/a a tu repositorio de proyecto. **Este archivo es tu tablero de mando
 
 ### 1.1 El problema jurídico
 ¿Qué problema **real del derecho colombiano** resuelve tu herramienta? ¿Quién lo sufre hoy y cómo lo resuelve sin tu herramienta?
-
+En Colombia, constituir una Sociedad por Acciones Simplificada (SAS) requiere redactar un documento de constitución (estatutos) que cumpla los requisitos mínimos del artículo 5 de la Ley 1258 de 2008. Aunque la SAS fue diseñada para simplificar la creación de empresas, muchos emprendedores de primera vez no saben qué cláusulas incluir (objeto social, capital autorizado/suscrito/pagado, órganos de administración, causales de disolución, restricciones a la negociación de acciones, etc.). Hoy resuelven esto de tres formas imperfectas: (1) pagan honorarios de un abogado o una notaría para unos estatutos estándar, (2) descargan plantillas genéricas de internet que no citan la norma ni se ajustan a su caso concreto, o (3) usan el formulario simplificado de Cámara de Comercio sin entender qué están firmando. Esto genera errores comunes: capital mal estructurado, omisión de cláusulas de protección entre socios, o desconocimiento de que la SAS no exige revisor fiscal ni junta directiva obligatoria.
 ### 1.2 Usuarios
 ¿Quién va a usarla? Describe a tu usuario ideal en una frase (ej. *"un arrendatario bogotano que le subieron el canon de arrendamiento más del límite legal"*). Recuerda que al final necesitas **al menos un usuario real** que la pruebe.
-
+Usuario ideal: un emprendedor bogotano de una startup en etapa temprana (1 a 3 socios) que quiere constituir su SAS entendiendo cada cláusula de sus estatutos, sin pagar de entrada honorarios de abogado para un borrador inicial. Usuario real de prueba: un compañero, familiar o conocido que esté evaluando montar un negocio propio y pueda simular el proceso con datos ficticios.
 ### 1.3 Qué hace y qué NO hace (alcance)
 | ✅ Sí hace | ❌ No hace |
 | --- | --- |
-| [funcionalidad 1] | [fuera de alcance 1] |
+| [Genera un borrador de estatutos de constitución de SAS a partir de un cuestionario guiado (nombre, domicilio, objeto social, capital, accionistas, representante legal, causales de disolución] | Explica en lenguaje simple qué significa cada cláusula y por qué es obligatoria u opcional] |
 | [funcionalidad 2] | [fuera de alcance 2] |
 
 *Consejo de abogado: un alcance pequeño y perfecto vale más que uno grande y roto.*
