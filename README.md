@@ -2,9 +2,9 @@
 
 **Pontificia Universidad Javeriana · 2026-II · Docente: Pedro Ardila**
 
-> **Estudiante:** [Isabella Medina Ospina ]
-> **Nombre del proyecto:** [SASify Colombia]
-> **Fecha de inicio:** [2026-08-21]
+> **Estudiante:** Isabella Medina Ospina 
+> **Nombre del proyecto:** SASify Colombia
+> **Fecha de inicio:** 2026-08-21
 
 ---
 
@@ -28,9 +28,9 @@ En Colombia, constituir una Sociedad por Acciones Simplificada (SAS) requiere re
 Usuario ideal: un emprendedor bogotano de una startup en etapa temprana (1 a 3 socios) que quiere constituir su SAS entendiendo cada cláusula de sus estatutos, sin pagar de entrada honorarios de abogado para un borrador inicial. Usuario real de prueba: un compañero, familiar o conocido que esté evaluando montar un negocio propio y pueda simular el proceso con datos ficticios.
 ### 1.3 Qué hace y qué NO hace (alcance)
 | ✅ Sí hace | ❌ No hace |
-| --- | --- |
-| [Genera un borrador de estatutos de constitución de SAS a partir de un cuestionario guiado (nombre, domicilio, objeto social, capital, accionistas, representante legal, causales de disolución] | Explica en lenguaje simple qué significa cada cláusula y por qué es obligatoria u opcional] |
-| [funcionalidad 2] | [fuera de alcance 2] |
+|Explica en lenguaje simple qué significa cada cláusula y por qué es obligatoria u opcional |No reemplaza la revisión final de un abogado o la firma ante notario cuando la ley la exija (ej. aportes en especie con inmuebles) |
+| Genera un borrador de estatutos de constitución de SAS a partir de un cuestionario guiado (nombre, domicilio, objeto social, capital, accionistas, representante legal, causales de disolución] | Explica en lenguaje simple qué significa cada cláusula y por qué es obligatoria u opcional] |
+|Cita el artículo específico de la Ley 1258 de 2008 que sustenta cada sección del borrador  | No asesora sobre régimen tributario (RUT, responsabilidad de IVA, retención) ni sobre registro de marca |
 
 *Consejo de abogado: un alcance pequeño y perfecto vale más que uno grande y roto.*
 
@@ -38,10 +38,14 @@ Usuario ideal: un emprendedor bogotano de una startup en etapa temprana (1 a 3 s
 ¿Qué normas alimentan tu herramienta? Lista tu corpus normativo (leyes, decretos, sentencias — debe ser **pequeño y público**):
 - [ ] Norma/sentencia 1: [nombre + enlace]
 - [ ] Norma/sentencia 2: [nombre + enlace]
+☐ Ley 1258 de 2008 (crea la SAS): http://www.secretariasenado.gov.co/senado/basedoc/ley_1258_2008.html
+☐ Ley 1258 de 2008, texto consolidado con notas de vigencia — Función Pública: https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=34130
+☐ Código de Comercio (Decreto 410 de 1971), Libro Segundo — normas supletorias en lo no regulado por la Ley 1258: http://www.secretariasenado.gov.co/senado/basedoc/codigo_comercio.html
+☐ Decreto Único Reglamentario 1074 de 2015, Sector Comercio — trámite de registro mercantil: https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77942
 
 ### 1.5 Nombre y lema
 Un nombre corto para tu herramienta y una frase que explique qué hace (la usarás en la demo del día de presentaciones).
-
+SASify Colombia — "Constituye tu SAS con estatutos claros, citando la ley y en minutos."
 ---
 
 ## 🗺️ Parte 2 — Plan de desarrollo
