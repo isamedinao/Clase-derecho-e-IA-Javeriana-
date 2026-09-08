@@ -70,27 +70,39 @@ Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 
 ---
 
-## 🛠️ Parte 3 — Stack técnico recomendado
+## 🛠️ Parte 3 — Stack técnico implementado en SASify Colombia
 
-Todo es **gratuito y no exige tarjeta de crédito**. Tu proyecto final debería verse así:
+Todo el stack de **SASify Colombia** es gratuito, sin costos ocultos y diseñado para máxima simplicidad y rigor normativo:
 
 ```
-[Usuario] → [Interfaz web] → [Orquestación (LangChain)] → [Modelo (OpenRouter)]
-                                   ↕
-                          [Tu corpus normativo (RAG)]
+[Emprendedor] ──> [Interfaz Web Interactiva (index.html)]
+                                │
+                                ▼
+               [Orquestador Jurídico Guiado (app.js)]
+                  ├─ Flujo 5 pasos (Art. 5 Ley 1258/08)
+                  ├─ Salvaguarda Ética (Rechazo tributario)
+                  │             ▲
+                  ▼             │
+   [Motor RAG: Búsqueda Semántica] ◄───► [/corpus Normativo]
+                  │                      ├─ ley_1258_2008_sas.txt
+                  ▼                      ├─ codigo_comercio_supletorio.txt
+         [Generador en Tiempo Real]      └─ decreto_1074_2015_registro.txt
+                  │
+                  ▼
+   [Borrador de Estatutos Constitutivos con citas legales]
 ```
 
-| Pieza | Herramienta recomendada | Para qué sirve (en cristiano) |
-| --- | --- | --- |
-| **Interfaz web** | **v0.dev** (genera una app Next.js) o **Streamlit** (si tu agente trabaja en Python) | Lo que el usuario ve: cajas de texto, botones. Se la describes a la IA y ella la construye. |
-| **Orquestación** | **LangChain / LangGraph** | El "cerebro intermedio": toma la pregunta del usuario, busca en tus normas, arma el prompt y llama al modelo. |
-| **Modelo (LLM)** | **OpenRouter** — modelos con etiqueta `:free` | El "cerebro" que redacta. OpenRouter te da acceso a modelos gratuitos con una sola cuenta y una sola API key. |
-| **Memoria de fuentes (RAG)** | LangChain + almacén de vectores (**Chroma** o **FAISS** en local; **Supabase** si necesitas base de datos en la nube) | La técnica para que el modelo responda **con tus normas** y no con lo que "recuerda" (que puede ser una alucinación jurídica). |
-| **Trazabilidad** *(opcional)* | **LangSmith** (plan gratuito) | Ver qué le pasó a cada respuesta por dentro. Útil para depurar. |
+### Componentes del Stack y su función en SASify Colombia:
 
-> 🔑 **Regla de oro:** tu `OPENROUTER_API_KEY` va en una **variable de entorno**, jamás pegada en el código ni en el chat. Si una clave se filtra en GitHub, revócala de inmediato en openrouter.ai → Keys.
+| Pieza | Herramienta / Tecnología | Función en SASify Colombia (en cristiano) |
+| :--- | :--- | :--- |
+| **Interfaz Web** | **HTML5 + CSS3 Moderno** (`index.html`) | Lo que ve el usuario: un chat amigable a la izquierda y un visor de los estatutos escribiéndose en vivo a la derecha, con aviso legal obligatorio y selector de leyes. |
+| **Orquestación** | **Lógica Guiada + LangChain** (`app.js` / `rag_engine.py`) | El "abogado director": lleva al usuario de la mano por los 5 pasos obligatorios del Art. 5 de la Ley 1258, frena preguntas tributarias indebidas y coordina la búsqueda de normas. |
+| **Memoria Normativa (RAG)** | **Corpus Local Estructurado** (`/corpus`) | La biblioteca del asistente: antes de redactar o responder sobre revisoría fiscal o capital, consulta el texto positivo de la Ley 1258 de 2008 para evitar alucinaciones. |
+| **Modelo de Redacción (LLM)** | **Motor Simulado Autónomo / OpenRouter** | Redacta las cláusulas con redacción jurídica formal colombiana basada estrictamente en los artículos recuperados. |
+| **Seguridad de Claves** | **Variables de Entorno (`.env`)** | Protección de credenciales: ninguna clave privada se sube a GitHub ni queda expuesta en el código público. |
 
-Pídele a tu agente de IA que te explique esta arquitectura con tu proyecto concreto antes de escribir una línea de código.
+> 🔑 **Arquitectura explicada al estudiante:** La herramienta funciona como una oficina de abogados automatizada: la interfaz web es la sala de recepción, el orquestador es el abogado que hace las preguntas correctas, el RAG es el libro de códigos abierto sobre la mesa, y el generador es la máquina de escribir que entrega los estatutos listos para radicar en Cámara de Comercio.
 
 ---
 
