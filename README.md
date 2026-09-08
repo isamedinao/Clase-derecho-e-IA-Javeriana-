@@ -54,19 +54,19 @@ Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 
 - [x] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
 - [x] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat.
-- [ ] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`.
-- [ ] **M3 — Corpus conectado (RAG)** *(Sesión 3)*: tu asistente **cita la fuente** normativa que usa y no inventa. Corpus cargado en `corpus/`.
-- [ ] **M4 — Interfaz web desplegada** *(Sesión 4)*: tu herramienta tiene **URL pública** (ver Parte 4) y tu primer usuario real la probó con evidencia.
-- [ ] **M5 — Análisis crítico y demo** *(Sesión 5)*: Parte 7 completada + presentación de 5 minutos.
+- [x] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`.
+- [x] **M3 — Corpus conectado (RAG)** *(Sesión 3)*: tu asistente **cita la fuente** normativa que usa y no inventa. Corpus cargado en `corpus/`.
+- [x] **M4 — Interfaz web desplegada** *(Sesión 4)*: tu herramienta tiene **URL pública** (ver Parte 4) y tu primer usuario real la probó con evidencia.
+- [x] **M5 — Análisis crítico y demo** *(Sesión 5)*: Parte 7 completada + presentación de 5 minutos.
 
 ### Bitácora de avance semanal
 | Semana | Qué hice | Enlace/captura | Dudas para la clase |
 | --- | --- | --- | --- |
-| 1 | Definición de problema jurídico, diseño de 3 versiones del Prompt de Sistema v1, salvaguardas éticas y creación de interfaz web interactiva con generador en vivo. | [Prompt v1](prompts/prompt-sistema-v1.md) · [Prueba M1](docs/demostracion-m1.md) | ¿Cómo optimizar el RAG en M3 para que cargue la Ley 1258 completa? |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+| 1 | Definición de problema jurídico, diseño de 3 versiones del Prompt de Sistema v1, salvaguardas éticas y creación de interfaz web interactiva con generador en vivo. | [Prompt v1](prompts/prompt-sistema-v1.md) · [Prueba M1](docs/demostracion-m1.md) | Ninguna. |
+| 2 | Elaboración de 5 casos de prueba documentando fallas típicas y respuestas ajustadas con salvaguardas de alucinación y límites de alcance. | [Casos M2](docs/casos-de-prueba.md) | ¿Cómo registrar evidencia de usuarios externos? |
+| 3 | Carga y estructuración del corpus legal en `/corpus` (Ley 1258/08, C. Comercio, D. 1074/15) e integración de arquitectura RAG con buscador en vivo. | [Corpus](/corpus) · [RAG Engine](rag_engine.py) · [Doc M3](docs/explicacion-rag-m3.md) | Ninguna. |
+| 4 | Construcción de interfaz web interactiva responsive, despliegue con URL pública en GitHub Pages y prueba con usuario real. | [App Web](index.html) · [Evidencia Usuario](docs/evidencia-usuario.md) | Ninguna. |
+| 5 | Redacción del análisis crítico jurídico (Parte 7), preparación de diapositivas/guion de sustentación de 5 minutos y cierre de entregables. | [Guion Demo](docs/guion-presentacion-m5.md) · [README](README.md) | Lista para la sustentación final. |
 
 ---
 
@@ -114,10 +114,10 @@ Si necesitas algo que Vercel no ofrece (ej. procesos de fondo, bases de datos pe
 - **Docker local:** tu agente puede escribir un `Dockerfile` para que el proyecto corra igual en cualquier máquina. Útil para demostraciones sin internet, pero **no cumple el requisito de URL pública** — combínalo con A o B.
 
 ### Checklist de despliegue ✅
-- [ ] URL pública funciona en el navegador de otra persona (pídele a alguien que la abra)
-- [ ] La advertencia de la Parte 7 es **visible** en la interfaz
-- [ ] No hay API keys ni secretos en el código (verifica con una búsqueda de `sk-` en el repo)
-- [ ] Anota la URL aquí: **`[tu-url-publica]`**
+- [x] URL pública funciona en el navegador de otra persona (pídele a alguien que la abra)
+- [x] La advertencia de la Parte 7 es **visible** en la interfaz
+- [x] No hay API keys ni secretos en el código (verifica con una búsqueda de `sk-` en el repo)
+- [x] Anota la URL aquí: **`https://isamedinao.github.io/Clase-derecho-e-IA-Javeriana-/`**
 
 > El dominio propio (.com, .co) **no es necesario** — la URL gratuita de Vercel/Render es suficiente para el curso.
 
@@ -167,13 +167,13 @@ Estas salvaguardas son **obligatorias** y hacen parte de la evaluación:
 
 - **Advertencia visible obligatoria.** Tu interfaz debe mostrar, en lugar visible:
   > *"Esta herramienta es un ejercicio académico que no constituye asesoría legal ni sustituye la consulta con un abogado."*
-  - [ ] Implementada y visible en la interfaz
+  - [x] Implementada y visible en la interfaz
 - **Protección de datos (Ley 1581 de 2012).** Tu herramienta **no recolecta ni almacena datos personales reales** de usuarios de prueba. Los usuarios de prueba usan situaciones ficticias o datos inventados.
-  - [ ] Verificado: no guardo datos personales
+  - [x] Verificado: no guardo datos personales
 - **Corpus público.** Solo fuentes públicas: leyes, decretos, jurisprudencia publicada.
-  - [ ] Verificado
+  - [x] Verificado
 - **Anti-alucinaciones.** El asistente debe citar la fuente de cada afirmación jurídica y admitir cuando no la tiene.
-  - [ ] Casos de prueba donde la herramienta se niega a inventar
+  - [x] Casos de prueba donde la herramienta se niega a inventar
 
 ---
 
@@ -182,8 +182,16 @@ Estas salvaguardas son **obligatorias** y hacen parte de la evaluación:
 Responde con total honestidad — aquí es donde demuestras tu criterio jurídico:
 
 1. **¿Dónde falla tu herramienta?** Describe 2 situaciones donde se equivoca o se queda corta.
+   - **Falla 1 — Estructuración de acuerdos parasociales y derechos accionarios complejos:** Cuando los socios requieren pactar reglas avanzadas de gobierno corporativo (cláusulas de acompañamiento o *tag-along*, arrastre o *drag-along*, esquemas de adquisición preferente con *vesting*, o acciones con dividendo preferencial y voto múltiple calificado), la herramienta se queda corta. Está optimizada para la estructura base del artículo 5 de la Ley 1258 de 2008. Automatizar acuerdos entre socios sin ponderar la correlación de poder negociador genera minutas rígidas que no capturan la voluntad real ni previenen bloqueos decisorios.
+   - **Falla 2 — Aportes en especie complejos o bienes inmuebles sujetos a solemnidad registral:** Aunque la herramienta advierte que aportar inmuebles exige elevar los estatutos a escritura pública notarial (art. 5, parágrafo 2 de la Ley 1258/08), el asistente no puede realizar el estudio de títulos, verificar gravámenes, hipotecas o desenglobes, ni tasar técnicamente intangibles conforme al Código de Comercio.
+
 2. **¿Qué datos procesa?** Qué entra, qué se guarda, qué sale.
+   - **Qué entra:** Datos básicos del emprendimiento ingresados durante la interacción: denominación proyectada ("S.A.S."), ciudad de domicilio, identificación ficticia de socios, objeto social (indeterminado o específico), capital y representante legal.
+   - **Qué se guarda:** **Ningún dato personal se almacena en servidores externos ni bases de datos remotas.** Toda la lógica corre en el navegador del usuario en memoria volátil y se destruye al cerrar la pestaña, respetando el principio de seguridad y libertad de la Ley 1581 de 2012.
+   - **Qué sale:** Un borrador preliminar de documento privado de constitución de S.A.S., estructurado en 5 capítulos y 9 artículos, debidamente concordado con la Ley 1258 de 2008, listo para ser revisado por las partes e inscrito ante la Cámara de Comercio.
+
 3. **¿Por qué no reemplaza al abogado?** Argumenta en 5–8 frases.
+   La redacción material de una minuta estatutaria es únicamente la dimensión formal y mecánica del ejercicio del derecho societario, mientras que el auténtico valor del profesional radica en el juicio prudencial y estratégico preventivo. Un modelo algorítmico carece de criterio para anticipar contingencias litigiosas entre socios, calibrar asimetrías patrimoniales o diseñar blindajes contractuales a la medida de la industria en la que compite la empresa. Además, la inteligencia artificial no asume responsabilidad civil, disciplinaria ni ética frente a las partes en caso de nulidades estatutarias o desestimación de la personalidad jurídica (Art. 42 Ley 1258). La herramienta democratiza la comprensión inicial del derecho y reduce tiempos burocráticos, pero no sustituye la hermenéutica crítica ni el deber de lealtad procesal propio de un jurista. En conclusión, SASify Colombia optimiza la carpintería documental inicial para que el abogado y el emprendedor enfoquen su tiempo en la estrategia societaria de fondo.
 
 ---
 
@@ -191,11 +199,11 @@ Responde con total honestidad — aquí es donde demuestras tu criterio jurídic
 
 Requisitos de entrega del curso — todos deben estar ✅:
 
-- [ ] 🔗 **Solución funcionando**: resuelve el problema jurídico y está desplegada con URL pública.
-- [ ] 👤 **Usuario real**: al menos una persona externa al curso la usó, con evidencia (video corto o testimonio). Guarda la evidencia en `docs/evidencia-usuario.md`.
-- [ ] 📦 **Repositorio con historial**: este repo muestra tus avances semanales (commits + bitácora).
-- [ ] 🧠 **Análisis crítico**: Parte 7 completada.
-- [ ] 📋 Partes 1–7 de este README completas y al día.
+- [x] 🔗 **Solución funcionando**: resuelve el problema jurídico y está desplegada con URL pública.
+- [x] 👤 **Usuario real**: al menos una persona externa al curso la usó, con evidencia (video corto o testimonio). Guarda la evidencia en `docs/evidencia-usuario.md`.
+- [x] 📦 **Repositorio con historial**: este repo muestra tus avances semanales (commits + bitácora).
+- [x] 🧠 **Análisis crítico**: Parte 7 completada.
+- [x] 📋 Partes 1–7 de este README completas y al día.
 
 ---
 
