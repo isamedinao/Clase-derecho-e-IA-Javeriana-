@@ -52,8 +52,8 @@ SASify Colombia — "Constituye tu SAS con estatutos claros, citando la ley y en
 
 Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 
-- [ ] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
-- [ ] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat.
+- [x] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
+- [x] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat.
 - [ ] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`.
 - [ ] **M3 — Corpus conectado (RAG)** *(Sesión 3)*: tu asistente **cita la fuente** normativa que usa y no inventa. Corpus cargado en `corpus/`.
 - [ ] **M4 — Interfaz web desplegada** *(Sesión 4)*: tu herramienta tiene **URL pública** (ver Parte 4) y tu primer usuario real la probó con evidencia.
@@ -62,7 +62,7 @@ Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 ### Bitácora de avance semanal
 | Semana | Qué hice | Enlace/captura | Dudas para la clase |
 | --- | --- | --- | --- |
-| 1 | | | |
+| 1 | Definición de problema jurídico, diseño de 3 versiones del Prompt de Sistema v1, salvaguardas éticas y creación de interfaz web interactiva con generador en vivo. | [Prompt v1](prompts/prompt-sistema-v1.md) · [Prueba M1](docs/demostracion-m1.md) | ¿Cómo optimizar el RAG en M3 para que cargue la Ley 1258 completa? |
 | 2 | | | |
 | 3 | | | |
 | 4 | | | |
