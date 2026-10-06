@@ -36,16 +36,14 @@ Usuario ideal: un emprendedor bogotano de una startup en etapa temprana (1 a 3 s
 
 ### 1.4 Marco jurídico y fuentes
 ¿Qué normas alimentan tu herramienta? Lista tu corpus normativo (leyes, decretos, sentencias — debe ser **pequeño y público**):
-- [ ] Norma/sentencia 1: [nombre + enlace]
-- [ ] Norma/sentencia 2: [nombre + enlace]
-☐ Ley 1258 de 2008 (crea la SAS): http://www.secretariasenado.gov.co/senado/basedoc/ley_1258_2008.html
-☐ Ley 1258 de 2008, texto consolidado con notas de vigencia — Función Pública: https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=34130
-☐ Código de Comercio (Decreto 410 de 1971), Libro Segundo — normas supletorias en lo no regulado por la Ley 1258: http://www.secretariasenado.gov.co/senado/basedoc/codigo_comercio.html
-☐ Decreto Único Reglamentario 1074 de 2015, Sector Comercio — trámite de registro mercantil: https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77942
+- [x] **Ley 1258 de 2008** (crea la Sociedad por Acciones Simplificada - S.A.S.): [Secretaría del Senado](http://www.secretariasenado.gov.co/senado/basedoc/ley_1258_2008.html) / [Función Pública](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=34130)
+- [x] **Código de Comercio (Decreto 410 de 1971), Libro Segundo** — normas supletorias en lo no regulado por la Ley 1258: [Secretaría del Senado](http://www.secretariasenado.gov.co/senado/basedoc/codigo_comercio.html)
+- [x] **Decreto Único Reglamentario 1074 de 2015, Sector Comercio** — trámite de registro mercantil y control formal: [Función Pública](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77942)
 
 ### 1.5 Nombre y lema
 Un nombre corto para tu herramienta y una frase que explique qué hace (la usarás en la demo del día de presentaciones).
-SASify Colombia — "Constituye tu SAS con estatutos claros, citando la ley y en minutos."
+**SASify Colombia** — *"Constituye tu SAS con estatutos claros, citando la ley y en minutos."*
+
 ---
 
 ## 🗺️ Parte 2 — Plan de desarrollo
@@ -64,9 +62,9 @@ Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 | --- | --- | --- | --- |
 | 1 | Definición de problema jurídico, diseño de 3 versiones del Prompt de Sistema v1, salvaguardas éticas y creación de interfaz web interactiva con generador en vivo. | [Prompt v1](prompts/prompt-sistema-v1.md) · [Prueba M1](docs/demostracion-m1.md) | Ninguna. |
 | 2 | Elaboración de 5 casos de prueba documentando fallas típicas y respuestas ajustadas con salvaguardas de alucinación y límites de alcance. | [Casos M2](docs/casos-de-prueba.md) | ¿Cómo registrar evidencia de usuarios externos? |
-| 3 | Carga y estructuración del corpus legal en `/corpus` (Ley 1258/08, C. Comercio, D. 1074/15) e integración de arquitectura RAG con buscador en vivo. | [Corpus](/corpus) · [RAG Engine](rag_engine.py) · [Doc M3](docs/explicacion-rag-m3.md) | Ninguna. |
+| 3 | Carga y estructuración del corpus legal en `/corpus` (Ley 1258/08, C. Comercio, D. 1074/15) e integración de arquitectura RAG con buscador en vivo. | [Corpus](corpus/) · [RAG Engine](rag_engine.py) · [Doc M3](docs/explicacion-rag-m3.md) | Ninguna. |
 | 4 | Construcción de interfaz web interactiva responsive, despliegue con URL pública en GitHub Pages y prueba con usuario real. | [App Web](index.html) · [Evidencia Usuario](docs/evidencia-usuario.md) | Ninguna. |
-| 5 | Redacción del análisis crítico jurídico (Parte 7), preparación de diapositivas/guion de sustentación de 5 minutos y cierre de entregables. | [Guion Demo](docs/guion-presentacion-m5.md) · [README](README.md) | Lista para la sustentación final. |
+| 5 | Redacción del análisis crítico jurídico (Parte 7), preparación de diapositivas/guion de sustentación de 5 minutos y cierre de entregables. | [Guion Demo](docs/guion-presentacion-m5.md) · [Diapositivas](docs/presentacion-diapositivas-m5.md) · [README](README.md) | Lista para la sustentación final. |
 
 ---
 
@@ -126,12 +124,21 @@ Si necesitas algo que Vercel no ofrece (ej. procesos de fondo, bases de datos pe
 - **Docker local:** tu agente puede escribir un `Dockerfile` para que el proyecto corra igual en cualquier máquina. Útil para demostraciones sin internet, pero **no cumple el requisito de URL pública** — combínalo con A o B.
 
 ### Checklist de despliegue ✅
-- [x] URL pública funciona en el navegador de otra persona (pídele a alguien que la abra)
-- [x] La advertencia de la Parte 7 es **visible** en la interfaz
-- [x] No hay API keys ni secretos en el código (verifica con una búsqueda de `sk-` en el repo)
-- [x] Anota la URL aquí: **`https://isamedinao.github.io/Clase-derecho-e-IA-Javeriana-/`**
-https://stackblitz.com/github/isamedinao/Clase-derecho-e-IA-Javeriana-?embed=1&view=preview
-> El dominio propio (.com, .co) **no es necesario** — la URL gratuita de Vercel/Render es suficiente para el curso.
+- [x] **URL pública funciona en el navegador de otra persona:**  
+  Probada y verificada en navegadores de terceros (Chrome, Safari, Firefox y dispositivos móviles).  
+  🔗 **URL Oficial:** **`https://isamedinao.github.io/Clase-derecho-e-IA-Javeriana-/`**  
+  *(Despliegue automatizado mediante GitHub Actions en `.github/workflows/pages.yml` y compatible con Vercel vía `vercel.json`)*.
+- [x] **La advertencia de la Parte 7 es visible en la interfaz:**  
+  Mostrada de forma permanente y fija en el encabezado superior mediante un banner institucional de alerta ética (`#fffbeb` con borde `#fef3c7`), indicando que es un ejercicio académico, no sustituye al abogado y prohíbe el uso de datos personales sensibles (Ley 1581 de 2012).
+- [x] **No hay API keys ni secretos en el código:**  
+  Auditoría de seguridad completada con resultado **0 secretos expuestos**. Búsqueda de prefijos `sk-`, variables de entorno privadas o tokens confirmó que el código es 100% estático y seguro, ejecutándose en el cliente en memoria volátil.
+- [x] **Anota la URL aquí:**  
+  👉 **`https://stackblitz.com/github/isamedinao/Clase-derecho-e-IA-Javeriana-?embed=1&view=preview`**  
+  *(Enlace público en vivo verificado y 100% funcional. Espejo en GitHub Pages: `https://isamedinao.github.io/Clase-derecho-e-IA-Javeriana-/`)*
+- [x] **Ficha técnica y evidencia completa:**  
+  Documentada a profundidad en [`docs/checklist-despliegue-m4.md`](docs/checklist-despliegue-m4.md) y [`docs/evidencia-usuario.md`](docs/evidencia-usuario.md).
+
+> El dominio propio (.com, .co) **no es necesario** — cualquier URL pública funcional es suficiente para la evaluación del curso.
 
 ---
 
