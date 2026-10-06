@@ -130,7 +130,7 @@ Si necesitas algo que Vercel no ofrece (ej. procesos de fondo, bases de datos pe
 - [x] La advertencia de la Parte 7 es **visible** en la interfaz
 - [x] No hay API keys ni secretos en el código (verifica con una búsqueda de `sk-` en el repo)
 - [x] Anota la URL aquí: **`https://isamedinao.github.io/Clase-derecho-e-IA-Javeriana-/`**
-
+https://stackblitz.com/github/isamedinao/Clase-derecho-e-IA-Javeriana-?embed=1&view=preview
 > El dominio propio (.com, .co) **no es necesario** — la URL gratuita de Vercel/Render es suficiente para el curso.
 
 ---
