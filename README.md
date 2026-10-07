@@ -133,7 +133,7 @@ Si necesitas algo que Vercel no ofrece (ej. procesos de fondo, bases de datos pe
 - [x] **No hay API keys ni secretos en el código:**  
   Auditoría de seguridad completada con resultado **0 secretos expuestos**. Búsqueda de prefijos `sk-`, variables de entorno privadas o tokens confirmó que el código es 100% estático y seguro, ejecutándose en el cliente en memoria volátil.
 - [x] **Anota la URL aquí:**  
-  👉 **`https://stackblitz.com/github/isamedinao/Clase-derecho-e-IA-Javeriana-?embed=1&view=preview`**  
+  👉 **https://singular-mandazi-509c86.netlify.app**  
   *(Enlace público en vivo verificado y 100% funcional. Espejo en GitHub Pages: `https://isamedinao.github.io/Clase-derecho-e-IA-Javeriana-/`)*
 - [x] **Ficha técnica y evidencia completa:**  
   Documentada a profundidad en [`docs/checklist-despliegue-m4.md`](docs/checklist-despliegue-m4.md) y [`docs/evidencia-usuario.md`](docs/evidencia-usuario.md).
